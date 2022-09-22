@@ -10,8 +10,8 @@ const useStars = () => {
   const [dataNumbers, setDataNumbers] = useState({number: 0, select: false});
 
   useEffect(() => {
-    setDataNumbers([Array(50).fill(null).map((i, v)=> ({number:v+1, select: false}))])
-    setDataStars([Array(12).fill(null).map((i, v)=> ({number:v+1, select: false}))])
+    setDataNumbers([Array(50).fill(null).map((i, v)=> ({number:v+1, select: false}))]);
+    setDataStars([Array(12).fill(null).map((i, v)=> ({number:v+1, select: false}))]);
     setReset(0);
   }, [reset]);
 
